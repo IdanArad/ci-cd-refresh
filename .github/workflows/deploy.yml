@@ -20,6 +20,12 @@ jobs:
       run: |
         mkdir -p bin
         go build -o bin/myapp ./main
+ 
+   - name: Upload build artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: myapp-binary
+        path: bin/myapp
 
     - name: Run tests
       run: go test ./...
