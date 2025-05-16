@@ -6,7 +6,7 @@ import (
 )
 
 func handler(w http.ResponseWriter, r *http.Request) {
-  fmt.Fprintf(w, "Hello again from the new CI/CD!")
+  fmt.Fprintf(w, "Hello again from the Jenkins")
 }
 
 func main() {
